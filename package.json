@@ -5,16 +5,15 @@
   "main": "src/server.js",
   "type": "module",
   "scripts": {
-  "start": "node src/server.js",
-  "dev": "nodemon src/server.js",
-  "prisma:generate": "npx prisma generate",
-  "prisma:migrate": "npx prisma migrate dev --name init",
-  "prisma:studio": "npx prisma studio",
-  "seed": "node scripts/seed.js"
-},
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "prisma:generate": "npx prisma generate",
+    "prisma:migrate": "npx prisma migrate dev",
+    "prisma:studio": "npx prisma studio",
+    "seed": "node scripts/seed.js"
+  },
   "dependencies": {
-    "@prisma/client": "^5.22.0",
-    "prisma": "^6.14.0",
+    "@prisma/client": "5.10.2",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
@@ -24,10 +23,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
-    "nodemon": "^3.1.0"
-  },
-  "engines": {
-    "node": "20.x"
+    "nodemon": "^3.1.0",
+    "prisma": "5.10.2"
   }
 }
-
